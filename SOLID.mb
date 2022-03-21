@@ -1,0 +1,20 @@
+S - (single responsibility principle)
+    - classes and methods should have only one responsibility and only one reason to be changed
+
+O - (open-closed principle)
+    - systems and subsystems should be open for extensions, but closed for modification
+    (if you want to add smth new, you need to create new class/interface - not modify previous code)
+
+L - (Liskov Substitution Principle)
+    - you should be able to substitute base type for the subtype and everything might works OK
+    (if you cast subtype to the base type, all base type functionality might works OK)
+
+I - (interface segregation principle)
+    - if you have interface, you might be aware that all members will be in use,
+      if it's not - you need to segregate this interface to smaller
+	  (it's better to have lots of small interfaces than big one)
+
+D - (dependency inversion principle)
+		- high-level modules should not depends on low-level modules, but on the abstractions
+		(high-level modules should not depends of implementation of smth)
+		
