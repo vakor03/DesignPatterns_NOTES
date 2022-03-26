@@ -1,0 +1,7 @@
+Factories are made to create new instance of class when you need several constructors,
+	or when your constructor has too much optional parameters
+
+- Factory method is a static or non-static method which we use to create new instance
+
+- Factory is a class which contains all factory methods
+	(We can make it as inner class of base class, so that we can make default constructor private)
