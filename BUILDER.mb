@@ -1,0 +1,16 @@
+Builders are made to create complicated objects, when constructors are too big
+
+- Fluent builder - builder that returns itself in each method
+		(this gives us an opportunity to use several methods in a row)
+
+- Builder facets - if you have several builders for one class, you need to have one facade builder,
+	in which all the builders could be invoken.
+	(All sub-builders must be extended of base builder and base builder might have
+	 protected field with base class, so that we can change base class in builders)
+
+- Functional builder - you can create builder in which you can add all actions you
+	want to perform on subj
+	(with this approach we can also use Extension methods to add new Actions)
+
+- Stepwise builder - if you need to create an object step by step, you need to create a chain of interface which return each other,
+	then we create Builder in which we implements all interfaces in private class and create static method which returns this class
