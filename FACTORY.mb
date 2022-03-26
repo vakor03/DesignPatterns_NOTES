@@ -5,3 +5,9 @@ Factories are made to create new instance of class when you need several constru
 
 - Factory is a class which contains all factory methods
 	(We can make it as inner class of base class, so that we can make default constructor private)
+
+- Abstract Factory is made to unite several factories in one, so that this new factory can produce lots of stuff
+
+- Bulk Replacement - we can use abstract factory to replace all instances of one class to another,
+	for this reason we need to wrap all the instances in Ref and save all created instances in List of
+	weak references, so that then we can change Value of Ref
