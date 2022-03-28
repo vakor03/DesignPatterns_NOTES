@@ -1,0 +1,18 @@
+Prototypes are objects we need to instanciate other objects with them
+
+To make prototypes work we need to copy objects. There are several ways to do this
+
+- ICloneable(bad) - this is the basic interface that has the only one method Clone()
+	(problem with this approach is that it doesn't specified if we realize deep copy or not,
+	also it returns object, which is also not as convenient as it meant to be)
+
+- Copy Constructors - this approach means having constructor that handle base type,
+	the main problem with this approach is having such constructor in all sub-classes of base classes
+
+- Interface copy with Inheritance - we need to have special interface which have CopyTo and DeepCopy
+	methods. DeepCopy has default implementation which just creates new instance of base obj and
+	invoke CopyTo method.
+	(problem with this approach is that every sub-class must implement this interface)
+
+- Copy through Serialization(really good) - this approach consists of serialization
+	and deserialization of the base object. However, each serializator has it's own requirements
