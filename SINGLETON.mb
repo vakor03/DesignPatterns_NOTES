@@ -1,0 +1,20 @@
+Singleton is created to have the only one instance of object where it's expensive or
+useless to have more than one instance
+
+- Singleton - we have class which has static field Instance which returns static instance of base class
+	(we could use Lazy<base class>, so that we will create static instance when we need it)
+	(Problem of Singleton is disability to test it, so we could return some interface as instance.
+	When we test class that might use singleton, we just substitute new test class to it)
+
+- PerThreadSingleton - we could make one instance of class not for all app, but only for
+	one thread. To make it work we need class called ThreadLocal<> or [ThreadStatic] attribute
+
+- Monostate - class that has non-static properties to static fields. This makes state
+	for all instances of class
+(non-static class with private static fields and non-static properties)
+
+- DI Singleton(socially acceptable) - we can crete singleton class using DI
+
+- Ambient context - if we need the same state for the group of the objects, we can use
+	this approach. Here we have static stack of context class and have property to peek value.
+	(To make it work properly we need to add IDisposable interface to it)

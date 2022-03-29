@@ -8,7 +8,7 @@ To make prototypes work we need to copy objects. There are several ways to do th
 
 - Copy Constructors - this approach means having constructor that handle base type,
 	the main problem with this approach is having such constructor in all sub-classes of base classes
-
+	
 - Interface copy with Inheritance - we need to have special interface which have CopyTo and DeepCopy
 	methods. DeepCopy has default implementation which just creates new instance of base obj and
 	invoke CopyTo method.
