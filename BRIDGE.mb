@@ -1,0 +1,6 @@
+We need bridges to decouple abstraction from implementation. It's also a strong form
+	of incapsulation and it gives as an opportunity to have several hierarchies of objects
+
+- bridge - it's simple base class with injected to it interface which incapsulate some Features
+
+- bridgeDI - we can perform auto-bridging using DI

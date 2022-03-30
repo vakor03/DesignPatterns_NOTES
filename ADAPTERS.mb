@@ -1,0 +1,10 @@
+Adapters are basically classes created to adapt one API to another
+
+- Caching - we can add caching to adapter, so that when we need to convert one interface
+	to another, we will bring data from static dictionary(cache), where key is hash-code.
+	So that if we call adapter for the same instance we will just bring it from cache
+
+- Generic value adapter - this approach is created to help building generic API.
+	It has the same principle as generic builders in sense of inheritance from TSelf
+
+- DI adapter - we can perform work of the adapter using DI such as Autofac
