@@ -1,0 +1,9 @@
+Composite pattern perform that single object and group of objects could have the same API
+
+There are several approach to do it:
+- use IEnumerable of base class - this gives an opportunity to create as single object,
+	as group of objects.
+	(for single object we yield return this)
+
+- create a nested Lazy collection inside of basic class - this disable collection
+	features if we don't need them
