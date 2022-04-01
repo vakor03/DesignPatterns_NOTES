@@ -1,0 +1,23 @@
+Decorators are classes we use to add behavior to class without inheriting it.
+
+- decorator - Usually we have an instance of the base class as private field,
+	so that we can access it's properties and methods
+
+- delegating members - if we need to expose sealed class we need to have it as a
+	private field and then delegate it's members
+
+- adapter-decorator - sometimes we need to make an decorator and adapter at the same time,
+	so we just delegate members of base class and add adapter behavior to class
+
+- multiple inheritance - in situations when we need multiple inheritance we could use
+	decorators
+
+- nested decorators - We could dynamically create decorators inside other decorators,
+	for this reason we need all decorators and base class inherit from the same class
+
+- cycle detections - if we could decorate decorators, we could have situation of
+	cycled decorators, for this reason we need this approach
+	()
+
+- DI decorator - we can perform create decorators using DI
+	(use RegisterDecorator method for this reason)
