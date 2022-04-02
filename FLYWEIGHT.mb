@@ -1,0 +1,6 @@
+Flyweight is design pattern about saving space
+
+- flyweight - we create static list of entries and then have poointer on instance we need
+
+- flyweight range - to format homogeneous array we could create ranges in which
+	we could specify formatting
