@@ -1,0 +1,6 @@
+Chain of responsibility is a chain of objects which all could process query or command
+
+- MethodChain - default implementation of this pattern
+	It's basically a linked list of commands, which all changes initial object
+	(this is actually a problem, cause some properties could be private or so)
+	(another problem is inability to delete some of the changes, they are permanent)
