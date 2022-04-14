@@ -1,0 +1,11 @@
+Command is basically an object which represents an instruction to perform a particular action
+(it contains all the information necessary for the action to be taken)
+
+- Command - main idea is saving all actions in the several objects and then perform the all
+  (We could make an interface that have Call())
+
+- Undo - we could make an Undo feature, for this we need to add Undo() to our interface
+  and Success flag, so that we would know that unsuccessful commands would not be undone
+
+- Composite commands - it's basically composite pattern for commands, when one command
+  perform several commands(even on multiple objects)
