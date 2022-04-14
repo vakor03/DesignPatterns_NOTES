@@ -4,3 +4,6 @@ Chain of responsibility is a chain of objects which all could process query or c
 	It's basically a linked list of commands, which all changes initial object
 	(this is actually a problem, cause some properties could be private or so)
 	(another problem is inability to delete some of the changes, they are permanent)
+
+- Broker chain - more complicated version of method chain, which uses queries and commands.
+	(commands don't change object itself, but change input query)
