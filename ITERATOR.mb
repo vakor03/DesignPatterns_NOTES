@@ -1,0 +1,10 @@
+Iterators are basically objects needed to specifiy how you can traverse an object
+
+- Special class Iterator - we could create special class for iteration the object
+  (the main problem is complexity of this approach and impossibility of using recursive calls)
+
+- duck typing - create iteration we dont need IEnumerable, we just need methods MoveNext and Current
+
+- using IEnumerable<T> - this interface gives us an opportunity to iterate objects
+
+- array-backed properties - we could save properties as the array and then iterate through this array
