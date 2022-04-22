@@ -1,0 +1,12 @@
+Null objects are instances of some class which are doing absolutely nothing
+
+- Null objects - We simply implement interface and give to all methods empty bodies
+  (if we need to return value, we return default(T))
+
+- Null object singleton - as we dont need to have multiple instances of NullObject,
+  we could create class that retutns single instance of it
+  (We could also return null as static field in interface)
+
+- Dynamic Null object - if we have too much of methods to implement, we could use
+  dynamic object for this reason
+  (it's very slow, so we could use it for testing etc.)
