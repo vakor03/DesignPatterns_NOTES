@@ -1,0 +1,8 @@
+Memento is simply a token or handle class which represents particular state of an object
+You can use it to roll back states arbitrarily
+
+- Memento - usually mementos are tokens or objects which represent state
+  (Usually they dont have any methods, only readonly properties)
+
+- Undo-Redo - we could save all mementos and then restore to particular point in time
+  (With this approach we could create memnto of constructor etc.)
