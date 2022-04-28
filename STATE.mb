@@ -1,0 +1,20 @@
+State is a pattern in which the object's behaviour is determined by it's state,
+  an object transitions from one state to another
+
+- State machine - formalized construct which manages state and transitions
+
+- Classic implementation - States are class objects and transitions between objects are
+  just creating new objects and replacing old ones
+  (Not used by now)
+
+- Dictionary State Machine - we create 2 enums: all possible states and all triggers,
+  then we create a dictionary with all states and all states we could transit to from them
+  (List<State, (Trigger, State)>)
+
+- Switch-based state machine - We have enum of all possible states and then we
+  create switch statement which has actions for transition to other states
+
+- Switch expressions - we could change switch statements to switch expressions if
+  we do not need to do any actions during transitions
+
+- Stateless - Useful library for state machines
