@@ -1,0 +1,9 @@
+Strategy enables special behaviour of system to be selected
+
+- Dynamic strategy - You can choose strategy you need in a run-time
+
+- Static strategy - You can't choose strategy in run-time cause it's predefined in class
+  with constructor or with
+
+- Comparisons strategies - when we compare class instances we could do it using
+  different criteria, all some kind of strategies
